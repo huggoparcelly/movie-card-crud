@@ -21,8 +21,8 @@ body {
 
 .movie-list {
   display: flex;
-  text-align: center;
   flex-flow: row wrap;
+  text-align: center;
   justify-content: center;
   padding: 48px 30px;
 }
@@ -86,8 +86,8 @@ body {
 
 .details {
   color: #007bff;
-  text-align: center;
   margin-bottom: 20px;
+  text-align: center;
   text-decoration: none;
 }
 
