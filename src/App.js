@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <div>Movie Card Library CRUD</div>
         <Switch>
           <Route exact path="/" render={ () => <MovieList /> } />
           <Route
@@ -26,7 +27,6 @@ class App extends Component {
           />
           <Route component={ NotFound } />
         </Switch>
-        <div>Movie Card Library CRUD</div>
       </Router>
     );
   }

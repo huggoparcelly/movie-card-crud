@@ -18,12 +18,26 @@ class MovieDetails extends Component {
     this.fetchMovie(); // requisição feita na montagem da pagina
   }
 
+  componentWillUnmount() {
+    const { id } = this.setState;
+    this.deletMovie(id);
+    this.fetchMovie();
+  }
+
   async fetchMovie() {
     const { match: { params: { id } } } = this.props;
     // requisição com getMovie lá de movieAPI
     const request = await movieAPI.getMovie(id);
     this.setState({
       movie: request, // populando o array movies
+      loading: false,
+    });
+  }
+
+  async deletMovie(id) {
+    const delet = await movieAPI.deleteMovie(id);
+    this.setState({
+      movie: delet,
       loading: false,
     });
   }
@@ -46,6 +60,7 @@ class MovieDetails extends Component {
         <nav>
           <Link to={ `/movies/${id}/edit` }>EDITAR</Link>
           <Link to="/">VOLTAR</Link>
+          <Link to="/" onClick={ () => this.deletMovie(id) }>DELETAR</Link>
         </nav>
       </div>
     );
@@ -55,7 +70,7 @@ class MovieDetails extends Component {
 MovieDetails.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      id: PropTypes.number,
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     }),
   }).isRequired,
 };

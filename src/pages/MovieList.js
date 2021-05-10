@@ -20,6 +20,10 @@ class MovieList extends Component {
     // se tiver em curso renderizar o componente Loading
   }
 
+  componentWillUnmount() {
+    this.fetchMovies();
+  }
+
   async fetchMovies() {
     // requisição com getMovie lá de movieAPI
     const request = await movieAPI.getMovies();
@@ -33,9 +37,7 @@ class MovieList extends Component {
     const { movies, loading } = this.state;
 
     // Render Loading here if the request is still happening
-    if (loading) {
-      return <Loading />;
-    }
+    if (loading) return <Loading />;
 
     return (
       <div data-testid="movie-list">
