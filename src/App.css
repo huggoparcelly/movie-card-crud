@@ -20,11 +20,11 @@ body {
 }
 
 .movie-list {
-  text-align: center;
   display: flex;
+  text-align: center;
   flex-flow: row wrap;
-  padding: 48px 30px;
   justify-content: center;
+  padding: 48px 30px;
 }
 
 .movie-card {
@@ -85,17 +85,17 @@ body {
 }
 
 .details {
-  text-align: center;
   color: #007bff;
-  text-decoration: none;
+  text-align: center;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .detailsLinks {
-  display: flex;
   color: #007bff;
-  text-decoration: none;
+  display: flex;
   justify-content: space-around;
+  text-decoration: none;
 }
 
 .page-subtitle {
