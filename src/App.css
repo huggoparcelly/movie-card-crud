@@ -23,8 +23,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  text-align: center;
   padding: 48px 30px;
+  text-align: center;
 }
 
 .movie-card {
