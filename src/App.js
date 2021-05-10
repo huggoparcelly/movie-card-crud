@@ -7,7 +7,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>Movie Card Library CRUD</div>
+        <header className="movie-card-header">
+          <h1 className="page-title">Movie Cards Library</h1>
+        </header>
+        <h2 className="page-subtitle">Movie Card Library CRUD</h2>
         <Switch>
           <Route exact path="/" render={ () => <MovieList /> } />
           <Route
