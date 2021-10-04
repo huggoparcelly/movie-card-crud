@@ -18,12 +18,6 @@ class MovieDetails extends Component {
     this.fetchMovie(); // requisição feita na montagem da pagina
   }
 
-  componentWillUnmount() {
-    const { id } = this.setState;
-    this.deletMovie(id);
-    this.fetchMovie();
-  }
-
   async fetchMovie() {
     const { match: { params: { id } } } = this.props;
     // requisição com getMovie lá de movieAPI
@@ -35,11 +29,7 @@ class MovieDetails extends Component {
   }
 
   async deletMovie(id) {
-    const delet = await movieAPI.deleteMovie(id);
-    this.setState({
-      movie: delet,
-      loading: false,
-    });
+    await movieAPI.deleteMovie(id);
   }
 
   render() {

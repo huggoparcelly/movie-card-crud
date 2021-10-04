@@ -20,10 +20,6 @@ class MovieList extends Component {
     // se tiver em curso renderizar o componente Loading
   }
 
-  componentWillUnmount() {
-    this.fetchMovies();
-  }
-
   async fetchMovies() {
     // requisição com getMovie lá de movieAPI
     const request = await movieAPI.getMovies();
