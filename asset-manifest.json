@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/movie-card-crud/static/css/main.321d70e3.chunk.css",
+    "main.js": "/movie-card-crud/static/js/main.e59b832e.chunk.js",
+    "main.js.map": "/movie-card-crud/static/js/main.e59b832e.chunk.js.map",
+    "runtime-main.js": "/movie-card-crud/static/js/runtime-main.bdb2e81f.js",
+    "runtime-main.js.map": "/movie-card-crud/static/js/runtime-main.bdb2e81f.js.map",
+    "static/js/2.cd8e7c5c.chunk.js": "/movie-card-crud/static/js/2.cd8e7c5c.chunk.js",
+    "static/js/2.cd8e7c5c.chunk.js.map": "/movie-card-crud/static/js/2.cd8e7c5c.chunk.js.map",
+    "index.html": "/movie-card-crud/index.html",
+    "precache-manifest.740e931bd0021389be1dfba342d5b557.js": "/movie-card-crud/precache-manifest.740e931bd0021389be1dfba342d5b557.js",
+    "service-worker.js": "/movie-card-crud/service-worker.js",
+    "static/css/main.321d70e3.chunk.css.map": "/movie-card-crud/static/css/main.321d70e3.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdb2e81f.js",
+    "static/js/2.cd8e7c5c.chunk.js",
+    "static/css/main.321d70e3.chunk.css",
+    "static/js/main.e59b832e.chunk.js"
+  ]
+}
