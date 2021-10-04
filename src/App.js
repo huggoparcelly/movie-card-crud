@@ -6,7 +6,7 @@ import { EditMovie, MovieDetails, MovieList, NewMovie, NotFound } from './pages'
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={ process.env.PUBLIC_URL }>
         <header className="movie-card-header">
           <h1 className="page-title">Movie Cards Library</h1>
         </header>
